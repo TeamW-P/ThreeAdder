@@ -9,7 +9,7 @@ def resource_not_found(e):
 def hello():
     return jsonify(about='Hello, WP!')
 
-@app.route('/oneadder/<num>', methods=['GET'])
+@app.route('/threeadder/<num>', methods=['GET'])
 def one_adder(num):
     try:
         input = (int) (num)
