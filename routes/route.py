@@ -7,7 +7,7 @@ def resource_not_found(e):
     return jsonify(error=str(e)), 400
 
 @routes.route('/<num>', methods=['GET'])
-def one_adder(num):
+def three_adder(num):
     try:
         value = (int) (num)
     except ValueError:
